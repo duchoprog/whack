@@ -1,0 +1,22 @@
+body {
+  background-color: rgb(233, 230, 78);
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#cont {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#grilla {
+  /*  color: whitesmoke; */
+  position: relative;
+}
+.grillaJs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cuadrado {
+  display: flex;
+  background-color: rgb(16, 58, 53);
+  border: 1px solid whitesmoke;
+}
