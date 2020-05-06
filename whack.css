@@ -23,13 +23,23 @@ header,
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  width: 600px;
+  width: 540px;
 }
 
 .cuadrado {
   display: flex;
   background-color: rgb(16, 58, 53);
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   border: 1px solid whitesmoke;
+}
+img,
+#resultado {
+  display: none;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
 }
