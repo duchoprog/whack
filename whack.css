@@ -33,8 +33,7 @@ header,
   height: 180px;
   border: 1px solid whitesmoke;
 }
-img,
-#resultado {
+img {
   display: none;
 }
 .show {

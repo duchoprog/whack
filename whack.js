@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  var timer = 60;
+  var timer = 20;
   var bifes = 0;
   var donde = null;
   const castigados = document.getElementById("castigados");
@@ -16,7 +16,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll("img").forEach((element) => {
       element.classList.remove("show");
     });
+
     clearInterval(bichos);
+    document.getElementById("resultado").classList.add("show");
+    document.querySelector("#resultado>span").innerText = bifes;
   }
   function asomar() {
     document.querySelectorAll("img").forEach((element) => {
@@ -40,16 +43,18 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.target.dataset.id == donde) {
       bifes++;
       castigados.innerText = bifes;
+      asomar();
     }
   }
 
-  function timer() {
+  function timeControl() {
     timer--;
+    console.log(timer);
     tiempo.innerText = timer;
     if (timer == 0) {
       clearInterval(titimer);
-      terminar;
+      terminar();
     }
   }
-  var titimer = setInterval(timer, 1000);
+  var titimer = setInterval(timeControl, 1000);
 });
