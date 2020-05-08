@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     clearInterval(bichos);
-    document.getElementById("resultado").classList.add("show");
+    document.getElementById("resultado").classList.remove("hide");
     document.querySelector("#resultado>span").innerText = bifes;
   }
   function asomar() {
